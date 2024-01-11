@@ -97,8 +97,8 @@ function draw() {
      obstaclesGroup.setVelocityXEach(0);
      cloudsGroup.setVelocityXEach(0);
    }
-  
- 
+   obstaclesGroup.setlifetimeEach (-1);
+   cloudsGroup.setlifetimeEach (-1);
 
   trex.collide(invisibleGround);
   
@@ -132,7 +132,7 @@ function spawnObstacles(){
     obstacle.scale = 0.5;
     obstacle.lifetime = 300;
    
-    obstaclesGroup.add(obstacle);
+    obstaclesGroup.add(obstacle);   
  }
 }
 
